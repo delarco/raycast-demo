@@ -13,6 +13,7 @@
     "vite": "^5.1.4"
   },
   "dependencies": {
+    "lil-gui": "^0.19.1",
     "raycast-ts": "github:delarco/raycast-ts"
   }
 }
