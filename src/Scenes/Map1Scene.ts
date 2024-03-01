@@ -3,6 +3,7 @@ import { MinimapMarker } from "raycast-ts/src/models/MinimapMarker"
 import { Minimap } from "raycast-ts/src/objects/Minimap"
 import { TextureUtils } from "raycast-ts/src/utils/Texture.utils"
 import { Projectile } from "raycast-ts/src/objects/Projectile"
+import { Map1EndingScene } from "./Map1EndingScene"
 
 export class Map1Scene extends RaycastScene {
 
@@ -235,7 +236,7 @@ export class Map1Scene extends RaycastScene {
             if (!this.ghostKilled) return
 
             this.load.getAudio("MUSIC")?.pause()
-            // TODO: start next scene
+            this.gameInstance.start(Map1EndingScene)
         }
     }
 
@@ -255,7 +256,7 @@ export class Map1Scene extends RaycastScene {
     }
 
     public onMouseClick(): void {
-        
+
         if (this.hasSpell && !this.spellRecharging) {
 
             this.spellRecharging = true
