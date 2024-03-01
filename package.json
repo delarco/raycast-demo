@@ -1,12 +1,28 @@
 {
   "name": "raycast-demo",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A raycast-ts demo.",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
+  },
+  "keywords": [
+    "raycast",
+    "engine",
+    "typescript",
+    "demo"
+  ],
+  "homepage": "https://github.com/delarco/raycast-demo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/delarco/raycast-demo.git"
+  },
+  "author": {
+    "name": "Leandro Del Arco",
+    "email": "leandrodelarco@outlook.com",
+    "url": "https://github.com/delarco"
   },
   "devDependencies": {
     "typescript": "^5.2.2",
