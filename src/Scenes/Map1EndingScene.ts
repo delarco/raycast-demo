@@ -1,4 +1,5 @@
 import { Color, Scene } from "raycast-ts"
+import { Map2Scene } from "./Map2Scene"
 
 export class Map1EndingScene extends Scene {
 
@@ -26,6 +27,6 @@ export class Map1EndingScene extends Scene {
 
     public onMouseClick(): void {
 
-        // TODO: start next scene
+        this.gameInstance.start(Map2Scene)
     }
 }
