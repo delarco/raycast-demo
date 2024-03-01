@@ -1,4 +1,5 @@
 import { Color, Scene } from "raycast-ts"
+import { Map1Scene } from "./Map1Scene"
 
 export class StartScene extends Scene {
 
@@ -26,5 +27,10 @@ export class StartScene extends Scene {
 
         this.add.text((resolution.width - msg4Tex.width) / 2, 200, "MSG4")
         this.add.rectangle((resolution.width - firespellTexture.width) / 2, 130, 46, 58, "FIRESPELL")
+    }
+
+    public onMouseClick(): void {
+
+        this.gameInstance.start(Map1Scene)
     }
 }
