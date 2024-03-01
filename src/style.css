@@ -25,3 +25,8 @@ body {
   padding: 2rem;
   text-align: center;
 }
+
+#loading {
+  position: absolute;
+  visibility: hidden;
+}
